@@ -1,0 +1,51 @@
+name: GhostyWorldRegen
+version: ${project.version}
+main: de.gergh0stface.ghostyworldregen.GhostyWorldRegen
+api-version: "1.21"
+author: Ger_Gh0stface
+description: Regenerate Multiverse worlds via in-game commands with backup support.
+
+softdepend:
+  - Multiverse-Core
+
+commands:
+  ghostyregen:
+    description: Main command for GhostyWorldRegen
+    usage: /ghostyregen <regenerate|backup|list|schedule|info|gui|reload> [args]
+    aliases:
+      - gwregen
+      - gregen
+
+permissions:
+  ghostyworldregen.regenerate:
+    description: Allows regenerating a Multiverse world
+    default: op
+  ghostyworldregen.backup:
+    description: Allows manually backing up a world
+    default: op
+  ghostyworldregen.list:
+    description: Allows listing all worlds and their regen status
+    default: op
+  ghostyworldregen.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+  ghostyworldregen.schedule:
+    description: Allows managing automatic world regen schedules
+    default: op
+  ghostyworldregen.info:
+    description: Allows viewing detailed world info
+    default: op
+  ghostyworldregen.gui:
+    description: Allows opening the world management GUI
+    default: op
+  ghostyworldregen.*:
+    description: Grants all GhostyWorldRegen permissions
+    default: op
+    children:
+      ghostyworldregen.regenerate: true
+      ghostyworldregen.backup: true
+      ghostyworldregen.list: true
+      ghostyworldregen.reload: true
+      ghostyworldregen.schedule: true
+      ghostyworldregen.info: true
+      ghostyworldregen.gui: true

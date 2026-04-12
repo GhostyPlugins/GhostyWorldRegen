@@ -1,0 +1,62 @@
+# ============================================================
+#   GhostyWorldRegen - Language File [English]
+#   Supports & color codes and hex codes (&#RRGGBB)
+# ============================================================
+
+# General
+no-permission: "&cYou don't have permission to use this command."
+player-only: "&cThis command can only be executed by a player."
+console-only: "&cThis command can only be executed from the console."
+reload-success: "&aConfiguration and language files reloaded successfully."
+unknown-command: "&cUnknown subcommand. Use &e/ghostyregen help &cfor help."
+plugin-prefix: "&8[&bGhosty&3WorldRegen&8]&r"
+
+# World related
+world-not-found: "&cThe world &e{world} &cwas not found."
+world-not-multiverse: "&cThe world &e{world} &cis not managed by Multiverse-Core."
+world-list-header: "&8&m----&r &bRegistered Worlds &8&m----"
+world-list-entry: "&7- &e{world} &8| &7Last Regen: &b{last_regen} &8| &7Backups: &b{backups}"
+world-list-never: "Never"
+world-list-empty: "&7No worlds have been regenerated yet."
+
+# Backup
+backup-start: "&7Creating backup of world &e{world}&7..."
+backup-success: "&aBackup of &e{world} &acreated successfully! &8(&7{file}&8)"
+backup-failed: "&cFailed to create backup of &e{world}&c. Check console for details."
+backup-max-reached: "&eOldest backup of &6{world} &ehas been removed (max {max} backups)."
+backup-not-needed: "&7Auto-backup is disabled. Skipping backup for &e{world}&7."
+
+# Regeneration
+regen-confirm-required: "&eType &6/ghostyregen confirm &eto confirm regeneration of &6{world}&e. &8(&7{timeout}s to confirm&8)"
+regen-confirm-expired: "&cConfirmation expired for world &e{world}&c."
+regen-no-pending: "&cYou have no pending regeneration to confirm."
+regen-confirmed: "&aRegeneration of &e{world} &aconfirmed. Starting..."
+regen-countdown: "&e{world} &cwill be regenerated in &6{seconds} &csecond(s)!"
+regen-start: "&cRegenerating world &e{world}&c..."
+regen-teleporting: "&eTeleporting &6{count} &eplayer(s) out of &6{world}&e..."
+regen-unloading: "&7Unloading world &e{world}&7..."
+regen-deleting: "&7Deleting world folder &e{world}&7..."
+regen-recreating: "&7Recreating world &e{world}&7 via Multiverse..."
+regen-success: "&aWorld &e{world} &ahas been successfully regenerated!"
+regen-failed: "&cFailed to regenerate world &e{world}&c. Check console for details."
+regen-already-running: "&cA regeneration is already in progress for &e{world}&c."
+regen-teleport-msg: "&eThe world &6{world} &eis being regenerated. You were teleported to &6{target}&e."
+regen-no-multiverse: "&cMultiverse-Core is not installed or enabled. Cannot regenerate worlds."
+
+# Help
+help-header: "&8&m============&r &bGhostyWorldRegen &3Help &8&m============"
+help-regen: "&e/ghostyregen regenerate <world> &7- Regenerate a world"
+help-backup: "&e/ghostyregen backup <world> &7- Manually backup a world"
+help-list: "&e/ghostyregen list &7- List all worlds & regen info"
+help-reload: "&e/ghostyregen reload &7- Reload the plugin config"
+help-footer: "&8&m============================================"
+
+# Schedule
+schedule-set: "&aAuto-regen for &e{world} &aset to every &e{hours}h&a."
+schedule-removed: "&7Auto-regen schedule for &e{world} &7has been removed."
+schedule-triggered: "&d[Auto] &7Scheduled regeneration started for &e{world}&7."
+
+# Help additions
+help-info: "&e/ghostyregen info <world> &7- Show detailed world info"
+help-schedule: "&e/ghostyregen schedule <world> <hours|remove> &7- Set auto-regen"
+help-gui: "&e/ghostyregen gui &7- Open the world management GUI"

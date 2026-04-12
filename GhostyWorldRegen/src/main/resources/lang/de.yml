@@ -1,0 +1,62 @@
+# ============================================================
+#   GhostyWorldRegen - Sprachdatei [Deutsch]
+#   Unterstützt & Farbcodes und Hex-Codes (&#RRGGBB)
+# ============================================================
+
+# Allgemein
+no-permission: "&cDu hast keine Berechtigung, diesen Befehl zu nutzen."
+player-only: "&cDieser Befehl kann nur von einem Spieler ausgeführt werden."
+console-only: "&cDieser Befehl kann nur von der Konsole ausgeführt werden."
+reload-success: "&aKonfiguration und Sprachdateien erfolgreich neu geladen."
+unknown-command: "&cUnbekannter Unterbefehl. Nutze &e/ghostyregen help &cfür Hilfe."
+plugin-prefix: "&8[&bGhosty&3WorldRegen&8]&r"
+
+# Welt
+world-not-found: "&cDie Welt &e{world} &cwurde nicht gefunden."
+world-not-multiverse: "&cDie Welt &e{world} &cwird nicht von Multiverse-Core verwaltet."
+world-list-header: "&8&m----&r &bRegistrierte Welten &8&m----"
+world-list-entry: "&7- &e{world} &8| &7Letzter Regen: &b{last_regen} &8| &7Backups: &b{backups}"
+world-list-never: "Nie"
+world-list-empty: "&7Bisher wurden noch keine Welten neu generiert."
+
+# Backup
+backup-start: "&7Erstelle Backup der Welt &e{world}&7..."
+backup-success: "&aBackup von &e{world} &aerfolgreich erstellt! &8(&7{file}&8)"
+backup-failed: "&cFehler beim Erstellen des Backups von &e{world}&c. Details in der Konsole."
+backup-max-reached: "&eÄltestes Backup von &6{world} &ewurde gelöscht (max. {max} Backups)."
+backup-not-needed: "&7Auto-Backup ist deaktiviert. Backup für &e{world} &7wird übersprungen."
+
+# Neu-Generierung
+regen-confirm-required: "&eGib &6/ghostyregen confirm &eum die Neu-Generierung von &6{world}&e zu bestätigen. &8(&7{timeout}s Zeit&8)"
+regen-confirm-expired: "&cDie Bestätigung für Welt &e{world} &cist abgelaufen."
+regen-no-pending: "&cDu hast keine ausstehende Neu-Generierung zum Bestätigen."
+regen-confirmed: "&aNeu-Generierung von &e{world} &abestätigt. Starte..."
+regen-countdown: "&eDie Welt &6{world} &cwird in &6{seconds} &cSekunde(n) neu generiert!"
+regen-start: "&cGeneriere Welt &e{world} &cneu..."
+regen-teleporting: "&eTeleportiere &6{count} &eSpieler aus &6{world}&e..."
+regen-unloading: "&7Entlade Welt &e{world}&7..."
+regen-deleting: "&7Lösche Weltordner &e{world}&7..."
+regen-recreating: "&7Erstelle Welt &e{world}&7 über Multiverse neu..."
+regen-success: "&aDie Welt &e{world} &awurde erfolgreich neu generiert!"
+regen-failed: "&cFehler beim Neu-Generieren von &e{world}&c. Details in der Konsole."
+regen-already-running: "&cFür die Welt &e{world} &cläuft bereits eine Neu-Generierung."
+regen-teleport-msg: "&eDie Welt &6{world} &ewird neu generiert. Du wurdest nach &6{target}&e teleportiert."
+regen-no-multiverse: "&cMultiverse-Core ist nicht installiert oder aktiv. Welten können nicht neu generiert werden."
+
+# Hilfe
+help-header: "&8&m============&r &bGhostyWorldRegen &3Hilfe &8&m============"
+help-regen: "&e/ghostyregen regenerate <Welt> &7- Welt neu generieren"
+help-backup: "&e/ghostyregen backup <Welt> &7- Welt manuell sichern"
+help-list: "&e/ghostyregen list &7- Alle Welten & Regen-Infos"
+help-reload: "&e/ghostyregen reload &7- Plugin-Konfiguration neu laden"
+help-footer: "&8&m============================================"
+
+# Zeitplanung
+schedule-set: "&aAuto-Regen für &e{world} &awurde auf alle &e{hours}h &agestellt."
+schedule-removed: "&7Auto-Regen für &e{world} &7wurde entfernt."
+schedule-triggered: "&d[Auto] &7Zeitgesteuerter Regen für &e{world}&7 wurde gestartet."
+
+# Hilfe Ergänzungen
+help-info: "&e/ghostyregen info <Welt> &7- Detaillierte Welt-Infos"
+help-schedule: "&e/ghostyregen schedule <Welt> <Stunden|remove> &7- Auto-Regen einstellen"
+help-gui: "&e/ghostyregen gui &7- Welt-Verwaltungs-Menü öffnen"

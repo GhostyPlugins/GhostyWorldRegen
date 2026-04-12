@@ -1,0 +1,70 @@
+# ============================================================
+#   GhostyWorldRegen - Configuration
+#   Author: Ger_Gh0stface
+# ============================================================
+
+# Language file to use (files are located in /lang/)
+# Available: en, de
+language: en
+
+# ============================================================
+#   Storage Settings
+# ============================================================
+storage:
+  # Choose between: yml, mysql
+  type: yml
+
+  mysql:
+    host: localhost
+    port: 3306
+    database: ghostyworldregen
+    username: root
+    password: password
+    # Advanced connection options
+    useSSL: false
+    autoReconnect: true
+    connection-pool-size: 5
+
+# ============================================================
+#   Backup Settings
+# ============================================================
+backup:
+  # Folder where backups are stored (relative to server root)
+  folder: "plugins/GhostyWorldRegen/backups"
+  # Maximum number of backups to keep per world (0 = unlimited)
+  max-per-world: 5
+  # Create a backup automatically before regenerating
+  auto-backup-before-regen: true
+  # Timestamp format in backup folder names (Java SimpleDateFormat)
+  timestamp-format: "yyyy-MM-dd_HH-mm-ss"
+
+# ============================================================
+#   Regeneration Settings
+# ============================================================
+regen:
+  # Teleport players out of the world before regenerating
+  teleport-players: true
+  # World to teleport players to when their world is being regenerated
+  # Leave empty to use the server default world
+  teleport-world: ""
+  # Countdown in seconds before regeneration starts (0 = instant)
+  countdown: 10
+  # Broadcast countdown to the whole server
+  broadcast-countdown: true
+  # Confirmation timeout in seconds
+  confirm-timeout: 30
+
+# ============================================================
+#   Messages Prefix
+# ============================================================
+prefix: "&8[&bGhosty&3WorldRegen&8]&r"
+
+# ============================================================
+#   Discord Webhook Settings
+# ============================================================
+discord:
+  enabled: false
+  # Paste your Discord webhook URL here
+  webhook-url: ""
+  # Send a notification when a backup is created
+  notify-backups: true
